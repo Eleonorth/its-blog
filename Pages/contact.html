@@ -26,19 +26,27 @@
             <!-- Nous allons créer un formulaire de contact -->
             
             <form name="contact" action="contact.php" method="post"> <!-- action = lien vers la page où on récoltera les infos/ method = méthode de récupération des données -->
+                <div>   <!--divier les blocs de textes--> 
                 <label for="email-id">Entre ton email </label>  <!-- lier la question au champ de réponse, optimal pour mobile --> 
-                <input id="email-id" type="text" name="email">    <!--créer un champ pour entrer son email-->
+                <input id="email-id" type="email" name="email" placeholder="johndoe@gmail.com" >  <!--créer un champ pour entrer son email-->
+                </div>
                 
+                <div> 
                 <label for="subject-id">Entre ton sujet</label>
-                <input id="subject-id" type="text" name="subject">
-                
+                <input id="subject-id" type="text" name="subject" placeholder="Quelle est la question?"> <!-- placeholder montre un exemple dans le champ --> </div>
+               
+                <div>
                 <label for="question-id">Entre ta question de manière cordiale s'il te plait</label>
-                <textarea id="question-id" name="question" cols="40" rows="20"></textarea>   <!-- On crée une zone de texte --> 
+                <textarea id="question-id" name="question" cols="40" rows="20" placeholder="Votre contenu" ></textarea>   <!-- On crée une zone de texte --> 
                 <!-- l'attribut name est OBLIGATOIRE --> 
-                
+                </div>
+                    
+                    
+                <div>    
                 <label for="response-id">Veux-tu une réponse rapide?</label>
                 <input id="response-id" type="radio" name="response" value="1"> Oui
-                <input type="radio" name="response" value="0"> Non
+                <input type="radio" name="response" value="0" checked> Non    <!-- par défaut, la réponse non est cochée -->
+                </div>
                 
                 <button type="submit">Envoyer</button>   <!-- 3 types de boutons : bouton, reset, submit. Bouton ne fait rien, reset efface tout et submit envoie de l'info -->
             </form>
