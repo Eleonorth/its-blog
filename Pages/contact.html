@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title> Contact</title>
+    </head>
+
+    <body>
+        <header> 
+        <nav>
+            <ul>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="liste-articles.html">Liste des articles</a></li>
+            <li><a href="contact.html">Contact</a></li></ul>
+        </nav>
+            
+            <h1>Ma page de contact</h1>
+            
+            <ul> <!-- fil d'Arianne pour retracer le chemin qu'on a parcouru --> 
+                <li> <a href="../index.html" title="Accueil">Accueil</a></li>
+                <li>Contact</li>
+                     
+            </ul>
+        </header>
+        <section>
+            <!-- Nous allons créer un formulaire de contact -->
+            
+            <form name="contact" action="contact.php" method="post"> <!-- action = lien vers la page où on récoltera les infos/ method = méthode de récupération des données -->
+                <label for="email-id">Entre ton email </label>  <!-- lier la question au champ de réponse, optimal pour mobile --> 
+                <input id="email-id" type="text" name="email">    <!--créer un champ pour entrer son email-->
+                
+                <label for="subject-id">Entre ton sujet</label>
+                <input id="subject-id" type="text" name="subject">
+                
+                <label for="question-id">Entre ta question de manière cordiale s'il te plait</label>
+                <textarea id="question-id" name="question" cols="40" rows="20"></textarea>   <!-- On crée une zone de texte --> 
+                <!-- l'attribut name est OBLIGATOIRE --> 
+                
+                <label for="response-id">Veux-tu une réponse rapide?</label>
+                <input id="response-id" type="radio" name="response" value="1"> Oui
+                <input type="radio" name="response" value="0"> Non
+                
+                <button type="submit">Envoyer</button>   <!-- 3 types de boutons : bouton, reset, submit. Bouton ne fait rien, reset efface tout et submit envoie de l'info -->
+            </form>
+        </section>
+        
+        <footer> <!-- pied de page --> 
+            <p> Copyright 2017 - Elle est au nord.</p>
+        </footer>
+    </body>
+
+
+</html>
