@@ -1,8 +1,5 @@
-        <!-- balise CSS : on l'isole du code html pour plus de netteté. Aussi, modifier le style à même le HTML est trop intrusif !
-le rem est plus responsive que le pixel pour les naviguateurs. --> 
-        <style rel="stylesheet" type="text/css">
-            
-            
+
+
             
             /* @font-face { lien vers le fichier du font }   = si je veux inclure une police téléchargée */ 
             
@@ -21,7 +18,7 @@ le rem est plus responsive que le pixel pour les naviguateurs. -->
             
             
             }
-            nav ul{  /* ul = miste, donc la mise en forme de la liste se fait ici, ou dans ul li */
+            nav ul{  /* ul = liste, donc la mise en forme de la liste se fait ici, ou dans ul li */
                 
              
                 padding : 0px;
