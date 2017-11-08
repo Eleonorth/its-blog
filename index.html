@@ -6,59 +6,15 @@
         <meta name="description" content="je suis en train de faire un super site">  <!-- décrit le contenu de la page pour les moteurs de recherche. 
         Par défaut google prend le contenu de la page dans body. --> 
         <meta name="og:title" content="Un blog super cool !"> <!-- pour l'aperçu du lien dans les partages de réseaux sociaux. --> 
-        
-        <!-- balise CSS : on l'isole du code html pour plus de netteté. Aussi, modifier le style à même le HTML est trop intrusif !
-le rem est plus responsive que le pixel pour les naviguateurs. --> 
-        <style rel="stylesheet" type="text/css">
-            * {
-                margin:0;
-            }
-            h1 {
-                color:#ea273a;
-                font-size: 2rem;
-                
-            }
-            p {
-                color:#392866;
-                font-size: : 16px;
-                text-align:left;
-                
-            }
-        
-            section {
-                
-                width: 600px;   /* taille du bloc section */
-                position: relative; 
-                /* margin: 0 auto 0 auto   == mettre le texte au centre via les marges.  */
-                margin : 0 auto; 
-                padding: 10px 20px 10px 20px; /*redéfini des marges à l'intérieur des marges */ 
-                /* border : 1px solid #ea273a; == dessine un cadre */
-                
-                
-            }
-            
-            footer {
-                padding:30px 0;
-                background: #ea273a;
-            }
-            
-            footer p { 
-                
-                
-                color: #000;
-                font-size: 14px;
-                text-align: center;
-            
-            
-            }
-        </style>
+        <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet"> 
+        <link rel="stylesheet" href="Asset/Style/common.css"> <!-- lien vers mon fichier css --> 
     </head>
     
     <body> 
     <header> <!-- créer une en-tête pour regrouper le titre et la navigation-->
         <nav> <!-- différencier la navigation du contenu global. = préciser qu'on est dans un menu --> 
             <ul> <!-- liste de liens -->  
-                <li><a href="../Blog/index.html" title="Page d'accueil">Page d'accueil</a></li>
+                <li><a class="active" href="../Blog/index.html" title="Page d'accueil">Page d'accueil</a></li>
                 <li><a href="Pages/liste-articles.html" title="Liste des articles">Liste des articles</a></li>
                 <li><a href="Pages/contact.html">Contact</a></li>
             </ul>

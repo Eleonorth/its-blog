@@ -1,0 +1,117 @@
+        <!-- balise CSS : on l'isole du code html pour plus de netteté. Aussi, modifier le style à même le HTML est trop intrusif !
+le rem est plus responsive que le pixel pour les naviguateurs. --> 
+        <style rel="stylesheet" type="text/css">
+            
+            
+            
+            /* @font-face { lien vers le fichier du font }   = si je veux inclure une police téléchargée */ 
+            
+            * {
+                margin:0;
+                font-family: 'Fredericka the Great', cursive;
+
+
+
+            }
+            
+            nav { 
+            
+            background:#ea273a;
+            
+            
+            
+            }
+            nav ul{  /* ul = miste, donc la mise en forme de la liste se fait ici, ou dans ul li */
+                
+             
+                padding : 0px;
+                
+            }
+            nav ul li {
+                
+
+                list-style: none;
+                display: inline; /* change l'affichage des éléments de la liste; inline = en ligne les uns derrière les autres */
+          
+            }
+            
+            nav ul li a { 
+                
+                color:#444444;
+                text-decoration: none; 
+                display:inline-block;
+                padding: 5px 20px 5px 20px; 
+                /* attention à l'endroit du padding : la sélection du clic n'est pas la même si on la met ici ou dans la section nav suivante */
+         
+                
+            }
+            
+            /* donner une couleur/un comportement à un lien choisi*/
+           /*  nav ul li a[title="Page d'accueil"]
+            { 
+                
+                color:#444;
+                text-decoration: overline; 
+               
+         
+                
+            } */ 
+            
+            /* renvoie à une classe définie dans mon code html, voir dans les liens vers "page d'accueil. On lui donne ainsi le comportement voulu dans le commentaire précédent. */ 
+            .active {
+                 color:#444;
+                text-decoration: overline; 
+            }
+                        /* créer un comportement au passage de la souris */ 
+            nav ul li a:hover  {  
+
+                color:#000;
+                text-decoration:overline; 
+                
+            }
+            
+            
+            section {
+                
+                width: 600px;   /* taille du bloc section */
+                position: relative; 
+                /* margin: 0 auto 0 auto   == mettre le texte au centre via les marges.  Auto = équilibre le bloc à droite et à gauche */
+                margin : 50px auto; 
+                padding: 10px 20px 10px 20px;
+                /*marge uniquement du bas*/ /*redéfini des marges à l'intérieur des marges */ 
+                /* border : 1px solid #ea273a; == dessine un cadre */
+                
+                /* marging = marges extérieures != padding = marges intérieures */ 
+                
+            }
+            
+            
+            section h1 {
+                color:#ea273a;
+                font-size: 2rem;
+                margin-bottom: 30px;
+               
+            }
+            section p {
+                color:#392866;
+                font-size: : 16px;
+                text-align:left;
+                
+            }
+        
+            
+            footer {
+                padding:30px 0;
+                background: #ea273a;
+            }
+            
+            footer p { 
+                
+                
+                color: #000;
+                font-size: 14px;
+                text-align: center;
+            
+            
+            }
+        </style>
