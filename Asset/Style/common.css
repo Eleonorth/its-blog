@@ -8,27 +8,40 @@
                 font-family: 'Fredericka the Great', cursive;
 
 
-
             }
             
             nav { 
             
-            background:#ea273a;
+            background-image: url(https://pre00.deviantart.net/fb76/th/pre/i/2013/044/8/2/cat_shapes___background_by_lalunatique-d5f93yf.jpg) ;
+            background-position: center;
+                
+                
             
-            
-            
+                
             }
-            nav ul{  /* ul = liste, donc la mise en forme de la liste se fait ici, ou dans ul li */
+            
+            ul li /* pour s'occuper des listes hors bloc navigation*/ {
+                
+               list-style:none;     
+                }
+            
+           ul{  /* ul = liste, donc la mise en forme de la liste se fait ici, ou dans ul li */
                 
              
                 padding : 0px;
                 
             }
-            nav ul li {
+
+        .breadcrumb {
+            margin : 10px 0 10px 10px;
+            }
+
+
+            nav ul li, .breadcrumb {   /* ajouter le même comportement à la barre de navigation ET au fil d'ariane */ 
                 
 
-                list-style: none;
-                display: inline; /* change l'affichage des éléments de la liste; inline = en ligne les uns derrière les autres */
+                display : inline;
+                /* change l'affichage des éléments de la liste; inline = en ligne les uns derrière les autres */
           
             }
             
@@ -68,7 +81,7 @@
             }
             
             
-            section {
+            section, .homepage {
                 
                 width: 600px;   /* taille du bloc section */
                 position: relative; 
@@ -111,4 +124,46 @@
             
             
             }
+
+
+      /* à finir   .link {
+            
+            text-decoration: none;
+            padding: 5px;
+            margin: 20px;
+            border:solid 1px black;
+            background-color: blueviolet;
+            
+    
+            } */ 
+
+        aside {
+        float: right;
+        width= 25%;
+        }
+
+        aside ul {
+        float:right;
+    
+        }
+
+        #singlearticle article {
+
+            width:75%;
+            
+        }
+
+
+        #singlearticle article img {
+    
+            
+            
+        }
+
+
+
+            #contact {
+                background-color: rgba(0, 0, 0, .2);   /* couleur et opacité */ 
+            }           
+
         </style>
